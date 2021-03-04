@@ -77,6 +77,12 @@ nav li a {
 	font-size: 18pt;
 	color: black;
 }
+a:link {
+	color: black;
+}
+a:visited {
+	color: black;
+}
 article {
 	background-color: #d4e9e7;
 	width: 1004px;
