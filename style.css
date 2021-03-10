@@ -63,19 +63,32 @@ h1 {
 	left: 328px;
 	top: 200px;
 }
-nav li{
+nav {
+	width: 960px;
+	margin: 0 auto;
+}
+nav ul {
+	list-style: none;
+	margin: 0; padding: 0;
+}
+nav ul li {
+	display: inline;
+	margin: 0; padding: 0;
+}
+nav ul li a {
 	display: inline-block;
+	float: left;
 	width: 33%;
 	text-align: center;
 	line-height: 45px;
 	text-decoration: none;
-	margin: 0 auto;
-}
-nav li a {
-	margin: 0;
-	text-decoration: none;
-	font-size: 18pt;
 	color: black;
+	font-size: 18pt;
+	border-right: 1px;
+	border-style: solid;
+}
+nav ul li:last-child a {
+	border-right: none;
 }
 a:link {
 	color: black;
@@ -91,6 +104,8 @@ article {
 }
 h2 {
 	font-size: 24pt;
+	position: relative;
+	top: 35px;
 }
 article img {
 	width: 250px;
@@ -128,10 +143,11 @@ article ul li::before {
   input[type=text]{
 	  width: 960px;
   }
-  input[type=text]#textboxlarge {
-	  width: 960px;
+  textarea#message {
+	  width: 965px;
 	  height: 100px;
 	  padding: 0;
+	  resize: none;
   }
   form p {
 	  font-size: 16pt;
